@@ -2,9 +2,9 @@ name: GitHub Discussions Notifier
 
 on:
   discussion:
-    types: [created]
+    types: [created, edited, deleted]
   discussion_comment:
-    types: [created]
+    types: [created, edited, deleted]
     
 jobs:
   notify-github-discussions:
